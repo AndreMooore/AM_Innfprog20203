@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><span id="utskrift"></span></p>
+<script>
+    const name = "André Moore";
+    const utskrift = name === "André Moore" ? true : false;
+    document.getElementById("utskrift").innerHTML = utskrift ? "<p>Mitt navn er André Moore</p>" : "<p>Mitt navn er ikke André Moore</p>";
+</script>
+</body>
+</html>

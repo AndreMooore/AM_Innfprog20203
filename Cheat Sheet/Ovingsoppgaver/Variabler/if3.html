@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Oppgave 3: Tell barna</title>
+</head>
+<body>
+    <script>
+        // Definerer variablene barn1, barn2 og barn3 med vilkårlige verdier "gutt" eller "jente"
+        const barn1 = "gutt";
+        const barn2 = "jente";
+        const barn3 = "gutt";
+
+        // Definerer variablene antall_gutter og antall_jenter med verdien 0
+        let antall_gutter = 0;
+        let antall_jenter = 0;
+
+        // Sjekker om barn1 er gutt eller jente
+        if (barn1 === "gutt") {
+            antall_gutter++;
+        } else if (barn1 === "jente") {
+            antall_jenter++;
+        }
+
+        // Sjekker om barn2 er gutt eller jente
+        if (barn2 === "gutt") {
+            antall_gutter++;
+        } else if (barn2 === "jente") {
+            antall_jenter++;
+        }
+
+        // Sjekker om barn3 er gutt eller jente
+        if (barn3 === "gutt") {
+            antall_gutter++;
+        } else if (barn3 === "jente") {
+            antall_jenter++;
+        }
+
+        // Skriver ut resultatet
+        document.write(`Gutter: ${antall_gutter}, Jenter: ${antall_jenter}`);
+    </script>
+</body>
+</html>
