@@ -24,9 +24,27 @@
         //Slette en film
         movieArchive.splice(4,1)
 
+        //Sjekke om en verdi finnes i arrayen
+        const movieExists = movieArchive.includes("Frozen")
+        console.log("Frozen finnes? " + movieExists)
+
+        //Sortere arrayen alfabetisk fra A-Å
+        movieArchive.sort()
+        //For å sortere bakvendt. Viktig at Sort gjøres først.
+        movieArchive.reverse()
         
+        const numberArray = [99, 2, 32, 10, 78]
+        
+        //Sortere array med tall fra minst til størst
+        numberArray.sort(function(a, b) {return a-b})
+
+        //Sortere array med tall fra størst til minst
+        numberArray.sort(function(a, b) {return b-a})
+
+
         // Teste at arrayen fungerer
         console.log(movieArchive)
+        console.log(numberArray)
 
     </script>
 </body>
