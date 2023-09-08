@@ -4,6 +4,8 @@
     <title>Oppgave 3: Tell barna</title>
 </head>
 <body>
+    <p><span id="antall_gutter"></span></p>
+    <p><span id="antall_jenter"></span></p>
     <script>
         // Definerer variablene barn1, barn2 og barn3 med vilkårlige verdier "gutt" eller "jente"
         const barn1 = "gutt";
@@ -34,9 +36,9 @@
         } else if (barn3 === "jente") {
             antall_jenter++;
         }
+        document.getElementById(antall_gutter)
 
-        // Skriver ut resultatet
-        document.write(`Gutter: ${antall_gutter}, Jenter: ${antall_jenter}`);
+      
     </script>
 </body>
 </html>
