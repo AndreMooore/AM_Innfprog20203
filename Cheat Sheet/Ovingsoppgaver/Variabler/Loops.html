@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops Cheat Sheet</title>
+</head>
+<body>
+    <h2>Nedtelling fra 10</h2>
+    <section id="Countdown"></section>
+    <h2>Alle femmerne mellom 50 og 100</h2>
+    <section id="Files"></section>
+
+    <h2>The sum of the hundred</h2>
+    <p id="Hundred"></p>
+
+    <h2>Tal delelig på 7</h2>
+    <p id="seven"></p>
+
+    <script>
+        for(let teller = 10; teller >= 0; teller--) {
+            document.getElementById("Countdown").innerHTML += `<p>${teller}</p>`
+        }
+
+        for (let tall = 50; tall <= 100; tall += 5) {
+            document.getElementById("Files").innerHTML += `<p>${tall}</p>`
+            
+        }
+            
+
+        let whileTeller = 1
+        while(whileTeller < 20) {
+            document.getElementById("Files").innerHTML += `<p>${whileTeller}</p>`
+            whileTeller ++
+        }
+
+        let previousValue = 0
+        const max = 670
+        for (let addere = 1; addere <= max; addere++) {
+            previousValue += addere
+            if(addere < max) {
+                document.getElementById("Hundred").innerHTML += addere + " + "
+            } else {
+                document.getElementById("Hundred").innerHTML += addere + " = " + previousValue
+            }
+            
+        }
+
+        //Vi ønsker å skrive ut alle tall mellom 1 og 100 som er delelig på 7
+
+        for(let tall = 1; tall <= 100; tall++) {
+            if(tall % 7 === 0) {
+                document.getElementById("seven").innerHTML += tall + ", "
+            }
+        }
+
+    </script>
+</body>
+</html>
