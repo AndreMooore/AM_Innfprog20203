@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Cheat Sheet</title>
+</head>
+<body>
+
+    <button id="knapp">Trykk meg</button>
+    <p id="melding"></p>
+    <script>
+        //Sjekk hva et event inneholder av egenskaper.
+        document.addEventListener("mousemove", function(event) {
+          //  console.log(event)
+        })
+
+        const knapp = document.getElementById("knapp")
+        //Vi skal endre knappeteksten når vi holder musepekeren over knappen.
+        knapp.addEventListener("mouseover", function(event) {
+            knapp.innerHTML = "Neeeei, ikke trykk på meg!"
+        })
+
+        knapp.addEventListener("mouseleave", function(event) {
+            knapp.innerHTML = "Trykk meg"
+        })
+        //Vi skal lage en eventListner etter trykk på knapp med id "knapp"
+        knapp.addEventListener("click", function(event) {
+            console.log(event)
+            document.getElementById("melding").innerHTML = "Du klarte ikke dy deg"
+        })
+
+
+
+
+
+    </script>
+</body>
+</html>
